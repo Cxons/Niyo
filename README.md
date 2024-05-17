@@ -25,9 +25,9 @@ This is a simple task management system with real time socket updates. The API a
 
 
 ### Sign Up
- **Endpoint:** `POST /user/register`
-**Description:** Enables users to sign up or register
--**Request Body:**
+ **Endpoint: `POST /user/register`
+**Description: Enables users to sign up or register
+**Request Body:**
 ```json
 {
   "userName": "string",
@@ -35,7 +35,7 @@ This is a simple task management system with real time socket updates. The API a
   "password": "string"
 }
 ```
--**Response: 
+**Response: 
 ```
 {
   "message": "string"
@@ -46,14 +46,14 @@ This is a simple task management system with real time socket updates. The API a
 ### Login
 **Endpoint:** `POST /user/login`
 **Description:** Handles user login or sign in 
--**Request Body:**
+**Request Body:**
 ```json
 {
   "email": "string",
   "password": "string"
 }
 ```
--**Response: 
+**Response: 
 ```
 {
  "message": "string",
