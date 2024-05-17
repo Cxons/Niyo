@@ -1,0 +1,20 @@
+const express = require("express");
+const app = express();
+const { Server } = require("socket.io");
+const userRouter = require("./src/Routes/userRoutes");
+const cors = require("cors");
+const handleErr = require("./src/middleware/errorHandler");
+const cookieParser = require("cookie-parser");
+const tasksRouter = require("./src/Routes/taskRoutes");
+const expressServer = app.listen(5000, () => {
+  console.log("server listening at port 5000");
+});
+const io = new Server(expressServer);
+app.use(cookieParser());
+app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use("/", express.static("public"));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use("/task", tasksRouter(io));
+app.use("/user", userRouter);
+app.use("/", handleErr);
