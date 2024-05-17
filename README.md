@@ -67,9 +67,9 @@ This is a simple task management system with real time socket updates. The API a
 ### Authorize
 **Endpoint:** `GET /user/current`
 **Description:** Ensures only authenticated get access to protected resources
+
+**Response: 
 ```
--**Response: 
-```json
 {
  "email": "string",
  "status": "requestStatus",
@@ -80,9 +80,10 @@ This is a simple task management system with real time socket updates. The API a
 ### Logout
 **Endpoint:** `GET /user/logout`
 **Description:** Handles user logout
+
+**Response: 
 ```
--**Response: 
-```{
+{
   "message" : "string"
 }
 ```
