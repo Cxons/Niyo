@@ -25,8 +25,8 @@ This is a simple task management system with real time socket updates. The API a
 
 
 ### Sign Up
--**Endpoint:** `POST /user/register`
--**Description:** Enables users to sign up or register
+ **Endpoint:** `POST /user/register`
+**Description:** Enables users to sign up or register
 -**Request Body:**
 ```json
 {
@@ -44,8 +44,8 @@ This is a simple task management system with real time socket updates. The API a
 
 
 ### Login
--**Endpoint:** `POST /user/login`
--**Description:** Handles user login or sign in 
+**Endpoint:** `POST /user/login`
+**Description:** Handles user login or sign in 
 -**Request Body:**
 ```json
 {
@@ -65,8 +65,8 @@ This is a simple task management system with real time socket updates. The API a
 ```
 
 ### Authorize
--**Endpoint:** `GET /user/current`
--**Description:** Ensures only authenticated get access to protected resources
+**Endpoint:** `GET /user/current`
+**Description:** Ensures only authenticated get access to protected resources
 ```
 -**Response: 
 ```json
@@ -78,8 +78,8 @@ This is a simple task management system with real time socket updates. The API a
 ```
 
 ### Logout
--**Endpoint:** `GET /user/logout`
--**Description:** Handles user logout
+**Endpoint:** `GET /user/logout`
+**Description:** Handles user logout
 ```
 -**Response: 
 ```{
@@ -90,9 +90,9 @@ This is a simple task management system with real time socket updates. The API a
 
 
 ### Create Task
-- **Endpoint:** `POST /task/createTask`
-- **Description:** Creates a new task.
-- **Request Body:**
+**Endpoint:** `POST /task/createTask`
+**Description:** Creates a new task.
+**Request Body:**
   ```json
   {
     "title": "string",
@@ -100,7 +100,7 @@ This is a simple task management system with real time socket updates. The API a
     "creatorEmail" : "string",
   }
    ```
-  -**Response:
+  **Response:
   ``` json
   {
   "message": "string
@@ -109,9 +109,9 @@ This is a simple task management system with real time socket updates. The API a
 
 
  ### Get All Tasks
--**Endpoint: GET /task/getTask
--**Description: Retrieves all tasks.
-_**Response: 
+**Endpoint: GET /task/getTask
+**Description: Retrieves all tasks.
+**Response: 
 ```json
 {
  "message" : "string",
@@ -120,15 +120,15 @@ _**Response:
 ```
 
 ### Edit Task Details
--**Endpoint: PATCH /task/editTaskDetails
--**Description: Modifies details like the taskTitle and taskdescription of a task.
--**Request Body:**
+**Endpoint: PATCH /task/editTaskDetails
+**Description: Modifies details like the taskTitle and taskdescription of a task.
+**Request Body:**
 {
   "taskId": "string",
   "taskTitle": "string",
   "taskDescription": "string",
 }
-_**Response:
+**Response:
 ```json
 {
   "message": "string",
@@ -138,13 +138,13 @@ _**Response:
 
 
 ### Delete Task
--**Endpoint: DELETE /task/deleteTask
--**Description: Deletes a task.
--**Request Body:**
+**Endpoint: DELETE /task/deleteTask
+**Description: Deletes a task.
+**Request Body:**
 {
   "taskId": "string"
 }
--**Response:
+**Response:
 ```json
 {
   "message": "string"
@@ -153,14 +153,14 @@ _**Response:
 ```
 
 ### Update Task Completion
--**Endpoint: PATCH /task/changeCompletedStatus
--**Description: Modifies the state of a task if it is completed or not.
--**Request Body:**
+**Endpoint: PATCH /task/changeCompletedStatus
+**Description: Modifies the state of a task if it is completed or not.
+**Request Body:**
 {
   "taskId": "string",
  "completionStatus": "boolean",
 }
-_**Response:
+**Response:
 ```json
 {
   "message": "string",
