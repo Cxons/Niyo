@@ -90,8 +90,8 @@ This is a simple task management system with real time socket updates. The API a
 
 
 ### Create Task
-**Endpoint:** `POST /task/createTask`
-**Description:** Creates a new task.
+**Endpoint: `POST /task/createTask`
+**Description: Creates a new task.
 **Request Body:**
   ```json
   {
