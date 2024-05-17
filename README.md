@@ -36,7 +36,8 @@ This is a simple task management system with real time socket updates. The API a
 }
 ```
 -**Response: 
-```{
+```
+{
   "message": "string"
 }
 ```
@@ -53,7 +54,8 @@ This is a simple task management system with real time socket updates. The API a
 }
 ```
 -**Response: 
-```{
+```
+{
  "message": "string",
  "accessToken": "string",
  "name": "string",
@@ -67,7 +69,8 @@ This is a simple task management system with real time socket updates. The API a
 -**Description:** Ensures only authenticated get access to protected resources
 ```
 -**Response: 
-```{
+```json
+{
  "email": "string",
  "status": "requestStatus",
  "success": "boolean"
@@ -98,7 +101,8 @@ This is a simple task management system with real time socket updates. The API a
   }
    ```
   -**Response:
-  ```{
+  ``` json
+  {
   "message": "string
     }
   ```
@@ -108,7 +112,8 @@ This is a simple task management system with real time socket updates. The API a
 -**Endpoint: GET /task/getTask
 -**Description: Retrieves all tasks.
 _**Response: 
-```{
+```json
+{
  "message" : "string",
  "data" : "object(array)"
 }
@@ -124,7 +129,8 @@ _**Response:
   "taskDescription": "string",
 }
 _**Response:
-```{
+```json
+{
   "message": "string",
   "data": "object"
 }
@@ -139,7 +145,8 @@ _**Response:
   "taskId": "string"
 }
 -**Response:
-```{
+```json
+{
   "message": "string"
    "data": "object"
  }
@@ -154,7 +161,8 @@ _**Response:
  "completionStatus": "boolean",
 }
 _**Response:
-```{
+```json
+{
   "message": "string",
   "data": "object"
 }
