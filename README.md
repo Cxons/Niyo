@@ -25,8 +25,8 @@ This is a simple task management system with real time socket updates. The API a
 
 
 ### Sign Up
- **Endpoint: `POST /user/register`
-**Description: Enables users to sign up or register
+ **Endpoint:** `POST /user/register`
+**Description:** Enables users to sign up or register
 **Request Body:**
 ```json
 {
@@ -91,8 +91,8 @@ This is a simple task management system with real time socket updates. The API a
 
 
 ### Create Task
-**Endpoint: `POST /task/createTask`
-**Description: Creates a new task.
+**Endpoint:** `POST /task/createTask`
+**Description:** Creates a new task.
 **Request Body:**
   ```json
   {
@@ -110,8 +110,8 @@ This is a simple task management system with real time socket updates. The API a
 
 
  ### Get All Tasks
-**Endpoint: GET /task/getTask
-**Description: Retrieves all tasks.
+**Endpoint:** GET /task/getTask
+**Description:** Retrieves all tasks.
 **Response: 
 ```json
 {
@@ -121,8 +121,8 @@ This is a simple task management system with real time socket updates. The API a
 ```
 
 ### Edit Task Details
-**Endpoint: PATCH /task/editTaskDetails
-**Description: Modifies details like the taskTitle and taskdescription of a task.
+**Endpoint:** PATCH /task/editTaskDetails
+**Description:** Modifies details like the taskTitle and taskdescription of a task.
 **Request Body:**
 {
   "taskId": "string",
@@ -139,8 +139,8 @@ This is a simple task management system with real time socket updates. The API a
 
 
 ### Delete Task
-**Endpoint: DELETE /task/deleteTask
-**Description: Deletes a task.
+**Endpoint:** DELETE /task/deleteTask
+**Description:** Deletes a task.
 **Request Body:**
 {
   "taskId": "string"
@@ -154,14 +154,14 @@ This is a simple task management system with real time socket updates. The API a
 ```
 
 ### Update Task Completion
-**Endpoint: PATCH /task/changeCompletedStatus
-**Description: Modifies the state of a task if it is completed or not.
+**Endpoint:** PATCH /task/changeCompletedStatus
+**Description:** Modifies the state of a task if it is completed or not.
 **Request Body:**
 {
   "taskId": "string",
  "completionStatus": "boolean",
 }
-**Response:
+**Response:**
 ```json
 {
   "message": "string",
@@ -212,7 +212,7 @@ Real-time updates for task-related events are streamed using Socket.io. The serv
 
 -**All tasks apart from the createTask**
 Event Name: response
-Payload: 
+Payload:
 ```json
 {
   "data": "object(array)"
