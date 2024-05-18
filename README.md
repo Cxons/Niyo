@@ -7,9 +7,9 @@ This is a simple task management system with real time socket updates. The API a
 ## Table of Contents
 
 - [API Endpoints](#api-endpoints)
-  - [Register User](#register)
+  - [Register User](#Sign-up)
   - [Login User](#login)
-  - [Authorize User](#current)
+  - [Authorize User](#Authorize)
   - [Logout User](#logout)
   - [Create Task](#create-task)
   - [Get All Tasks](#get-all-tasks)
