@@ -101,7 +101,7 @@ This is a simple task management system with real time socket updates. The API a
     "creatorEmail" : "string",
   }
    ```
-  -**Response:**
+  **Response:**
   ``` json
   {
   "message": "string"
@@ -176,7 +176,7 @@ This is a simple task management system with real time socket updates. The API a
 
 ## Data Models
 
--**Users** 
+**Users** 
 ```
 {
   "userName": "string",
@@ -187,7 +187,7 @@ This is a simple task management system with real time socket updates. The API a
 
 
 
--**Tasks** 
+**Tasks** 
 ```
 {
   "taskId": "string",
@@ -210,7 +210,7 @@ Real-time updates for task-related events are streamed using Socket.io. The serv
 
 ### Events
 
--**All tasks apart from the createTask**
+**All tasks apart from the createTask**
 Event Name: response
 Payload:
 ```json
@@ -219,7 +219,7 @@ Payload:
 }
 ```
 
- -**createTask**
+ **createTask**
  Event Name: response
  Payload: 
  ```json
