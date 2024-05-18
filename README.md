@@ -25,7 +25,7 @@ This is a simple task management system with real time socket updates. The API a
 
 
 ### Sign Up
- **Endpoint:** `POST /user/register`
+**Endpoint:** `POST /user/register`
 **Description:** Enables users to sign up or register
 **Request Body:**
 ```json
@@ -35,7 +35,7 @@ This is a simple task management system with real time socket updates. The API a
   "password": "string"
 }
 ```
-**Response: 
+**Response:** 
 ```
 {
   "message": "string"
@@ -53,7 +53,7 @@ This is a simple task management system with real time socket updates. The API a
   "password": "string"
 }
 ```
-**Response: 
+**Response:** 
 ```
 {
  "message": "string",
@@ -68,7 +68,7 @@ This is a simple task management system with real time socket updates. The API a
 **Endpoint:** `GET /user/current`
 **Description:** Ensures only authenticated get access to protected resources
 
-**Response: 
+**Response:** 
 ```
 {
  "email": "string",
@@ -81,7 +81,7 @@ This is a simple task management system with real time socket updates. The API a
 **Endpoint:** `GET /user/logout`
 **Description:** Handles user logout
 
-**Response: 
+**Response:** 
 ```
 {
   "message" : "string"
@@ -101,7 +101,7 @@ This is a simple task management system with real time socket updates. The API a
     "creatorEmail" : "string",
   }
    ```
-  -**Response:
+  -**Response:**
   ``` json
   {
   "message": "string"
@@ -112,7 +112,7 @@ This is a simple task management system with real time socket updates. The API a
  ### Get All Tasks
 **Endpoint:** GET /task/getTask
 **Description:** Retrieves all tasks.
-**Response: 
+**Response:** 
 ```json
 {
  "message" : "string",
@@ -129,7 +129,7 @@ This is a simple task management system with real time socket updates. The API a
   "taskTitle": "string",
   "taskDescription": "string",
 }
-**Response:
+**Response:**
 ```json
 {
   "message": "string",
@@ -145,7 +145,7 @@ This is a simple task management system with real time socket updates. The API a
 {
   "taskId": "string"
 }
-**Response:
+**Response:**
 ```json
 {
   "message": "string"
