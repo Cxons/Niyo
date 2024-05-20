@@ -15,7 +15,7 @@ This is a simple task management system with real time socket updates. The API a
   - [Get All Tasks](#get-all-tasks)
   - [Edit Task Details](#edit-task-details)
   - [Delete Task](#delete-task)
-  - [Change Completed Status](#change-completed-status)
+  - [Change Completed Status](#update-task-completion)
 - [Data Models](#data-models)
 - [Real-time Data Streaming](#real-time-data-streaming)
 - [Usage](#usage)
